@@ -1,0 +1,115 @@
+$def with(datos)
+
+<label class="label3_personalizada"></label>
+<label class="etiqueta2_personalizada"><h1>EDITAR</h1></label>
+
+<head>
+    <style type="text/css">
+      .boton_personalizado{
+      text-decoration: none;
+      padding: 10px;
+      font-weight: 600;
+      font-size: 20px;
+      color: #ffffff;
+      background-color: #1883ba;
+      border-radius: 6px;
+      border: 2px solid #0016b0;
+      width:200px;
+      height:50px;
+      }
+      .boton_personalizado:hover{
+      color: #f9fbfc;
+      background-color: #080000;
+      }
+      </style>
+
+<style type="text/css">
+  .etiqueta_personalizada{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    width:200px;
+    height:50px;
+  }
+</style>  
+<style type="text/css">
+  .etiqueta2_personalizada{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #050000;
+    background-color: #f3f703;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    width:1000px;
+    height:70px;
+  }
+</style>   
+<style type="text/css">
+  .label_personalizada{
+    width:350px;
+    height:50px;
+  }
+</style>  
+<style type="text/css">
+  .label2_personalizada{
+    width:20px;
+    height:20px;
+  }
+</style>  
+<style type="text/css">
+  .label3_personalizada{
+    width:150px;
+    height:50px;
+  }
+</style>    
+</head>    
+
+<form method="POST">
+    <div class="form-group">
+      <label class="label3_personalizada"></label>
+      <label for="Id" class="etiqueta_personalizada">Id</label>
+      <label class="label2_personalizada"></label>
+      <input type="Id" readonly="true" value="$datos.Id" id="Id" name="Id" aria-describedby="IdHelp" placeholder="Enter Id" size="50">
+      
+    </div>
+    <div class="form-group">
+      <label class="label3_personalizada"></label>
+      <label for="exampleInputPassword1" class="etiqueta_personalizada">Nombre</label>
+      <label class="label2_personalizada"></label>
+      <input type="Nombre" value="$datos.Nombre" id="Nombre" name="Nombre" placeholder="Nombre" size="50">
+    </div>
+    <div class="form-group">
+        <label class="label3_personalizada"></label>
+        <label for="exampleInputPassword1" class="etiqueta_personalizada">A_Paterno</label>
+        <label class="label2_personalizada"></label>
+        <input type="A_Paterno" value="$datos.A_Paterno" id="A_Paterno" name="A_Paterno" placeholder="A_Paterno" size="50">
+    </div>
+    <div class="form-group">
+        <label class="label3_personalizada"></label>
+        <label for="exampleInputPassword1" class="etiqueta_personalizada">A_Materno</label>
+        <label class="label2_personalizada"></label>
+        <input type="A_Materno" value="$datos.A_Materno" id="A_Materno" name="A_Materno" placeholder="A_Materno" size="50">
+    </div>
+    <div class="form-group">
+        <label class="label3_personalizada"></label>
+        <label for="exampleInputPassword1" class="etiqueta_personalizada">Direccion</label>
+        <label class="label2_personalizada"></label>
+        <input type="Direccion" value="$datos.Direccion" id="Direccion" name="Direccion" placeholder="Direccion" size="50">
+    </div>
+    <div class="form-group">
+        <label class="label3_personalizada"></label>
+        <label for="exampleInputPassword1" class="etiqueta_personalizada">Telefono</label>
+        <label class="label2_personalizada"></label>
+        <input type="Telefono" value="$datos.Telefono" id="Telefono" name="Telefono" placeholder="Telefono" size="50">
+      </div>
+      <label class="label_personalizada"></label>
+    <button type="submit" class="boton_personalizado">EDITAR</button>
+  </form>
+  
